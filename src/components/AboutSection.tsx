@@ -1,4 +1,4 @@
-import dalvaInstructor from "@/assets/dalva-instructor.jpg";
+import dalvaQuemSouEu from "@/assets/dalva-quem-sou-eu.png";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -44,7 +44,7 @@ export const AboutSection = () => {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <img
-                src={dalvaInstructor}
+                src={dalvaQuemSouEu}
                 alt="Dalva Lúcia - Instrutora de Trânsito com mais de 16 anos de experiência"
                 className="w-full max-w-md rounded-3xl shadow-strong"
               />
