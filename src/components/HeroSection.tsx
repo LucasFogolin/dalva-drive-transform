@@ -1,6 +1,6 @@
 import { WhatsAppButton } from "./WhatsAppButton";
 import heroBackground from "@/assets/hero-background.jpg";
-import dalvaInstructor from "@/assets/dalva-instructor.jpg";
+import dalvaInstructor from "/lovable-uploads/58375f5d-0a89-4fa5-b2b5-468ffe52f413.png";
 
 export const HeroSection = () => {
   return (
