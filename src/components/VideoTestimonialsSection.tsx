@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const videoTestimonials = [
   {
@@ -33,7 +34,8 @@ export const VideoTestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {videoTestimonials.map((video, index) => (
             <Card key={index} className="group cursor-pointer shadow-soft hover:shadow-medium transition-all duration-300 border-lavender/20">
               <CardHeader className="p-0">
@@ -52,6 +54,36 @@ export const VideoTestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {videoTestimonials.map((video, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-4/5">
+                  <Card className="group cursor-pointer shadow-soft hover:shadow-medium transition-all duration-300 border-lavender/20">
+                    <CardHeader className="p-0">
+                      <div className="relative bg-gradient-primary rounded-t-lg h-40 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-black/20 rounded-t-lg" />
+                        <div className="relative z-10 bg-white/20 rounded-full p-3 group-hover:scale-110 transition-transform duration-300">
+                          <Play className="w-6 h-6 text-white fill-white" />
+                        </div>
+                        <div className="absolute bottom-3 left-3 right-3">
+                          <h3 className="font-semibold text-white text-xs leading-tight">{video.title}</h3>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="p-3">
+                      <p className="text-muted-foreground text-xs">{video.description}</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
         
         <div className="text-center mt-12">

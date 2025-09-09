@@ -1,5 +1,6 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -37,7 +38,8 @@ export const TestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="shadow-soft hover:shadow-medium transition-all duration-300 border-lavender/20">
               <CardContent className="p-8">
@@ -61,6 +63,41 @@ export const TestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4">
+                  <Card className="shadow-soft hover:shadow-medium transition-all duration-300 border-lavender/20">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-2 mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                        ))}
+                      </div>
+                      
+                      <div className="relative">
+                        <Quote className="absolute -top-2 -left-2 w-6 h-6 text-lavender" />
+                        <blockquote className="text-muted-foreground italic leading-relaxed pl-4 text-sm">
+                          "{testimonial.text}"
+                        </blockquote>
+                      </div>
+                      
+                      <div className="mt-4 pt-4 border-t border-lavender/30">
+                        <p className="font-semibold text-primary text-sm">{testimonial.name}</p>
+                        <p className="text-xs text-muted-foreground">Aluna da Instrutora Dalva</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
