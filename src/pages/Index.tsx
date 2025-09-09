@@ -6,6 +6,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { VideoTestimonialsSection } from "@/components/VideoTestimonialsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { SocialFooter } from "@/components/SocialFooter";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <TestimonialsSection />
       <VideoTestimonialsSection />
       <ContactSection />
+      <SocialFooter />
       <FloatingWhatsApp />
     </div>
   );
