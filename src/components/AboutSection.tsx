@@ -1,4 +1,4 @@
-import dalvaInstructor from "@/assets/dalva-instructor.jpg";
+import dalvaInstructor from "/lovable-uploads/fb863f46-7728-4005-8b3c-f4af29198f45.png";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
