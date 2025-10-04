@@ -71,8 +71,8 @@ export const VideoTestimonialsSection = () => {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="p-4">
-                  <p className="bg-gradient-primary bg-clip-text text-transparent text-sm font-semibold">{video.description}</p>
+                <CardContent className="p-4 bg-gradient-primary">
+                  <p className="text-white text-sm font-medium">{video.description}</p>
                 </CardContent>
               </Card>
             </a>
@@ -110,8 +110,8 @@ export const VideoTestimonialsSection = () => {
                           </div>
                         </div>
                       </CardHeader>
-                      <CardContent className="p-3">
-                        <p className="bg-gradient-primary bg-clip-text text-transparent text-xs font-semibold">{video.description}</p>
+                      <CardContent className="p-3 bg-gradient-primary">
+                        <p className="text-white text-xs font-medium">{video.description}</p>
                       </CardContent>
                     </Card>
                   </a>
