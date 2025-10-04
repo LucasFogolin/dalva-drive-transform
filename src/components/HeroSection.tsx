@@ -23,9 +23,9 @@ export const HeroSection = () => {
             <div className="pt-4">
               <WhatsAppButton 
                 variant="hero"
-                message="Olá! Gostaria de agendar minha aula avaliativa. Quero vencer o medo de dirigir!"
+                message="Olá! Vi seu site e gostaria de saber mais informações sobre a aula de avaliação."
               >
-                Agende sua Aula Avaliativa pelo WhatsApp
+                Agende aqui sua Aula de Avaliação!
               </WhatsAppButton>
             </div>
           </div>

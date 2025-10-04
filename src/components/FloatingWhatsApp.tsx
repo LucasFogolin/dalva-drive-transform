@@ -1,5 +1,5 @@
 export const FloatingWhatsApp = () => {
-  const whatsappUrl = "https://wa.me/5513981993808?text=Olá! Gostaria de agendar uma aula de direção.";
+  const whatsappUrl = "https://wa.me/5513981993808?text=Oi! gostaria de saber mais informações.";
 
   return (
     <a
