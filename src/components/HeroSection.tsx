@@ -17,8 +17,8 @@ export const HeroSection = () => {
               <span className="bg-gradient-primary bg-clip-text text-transparent"> conquiste sua independência</span> no trânsito
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Aulas de direção personalizadas para habilitados em Santos, São Vicente e Praia Grande. 
-              Volte a dirigir com confiança e segurança!
+              Aulas de direção personalizadas para <span className="text-primary font-semibold">habilitados</span> em Santos, São Vicente e Praia Grande. 
+              Volte a dirigir com <span className="text-primary font-semibold">confiança</span> e <span className="text-primary font-semibold">segurança</span>!
             </p>
             <div className="pt-4">
               <WhatsAppButton 

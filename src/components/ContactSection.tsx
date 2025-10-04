@@ -11,16 +11,16 @@ export const ContactSection = () => {
             Preparado(a) para dar o primeiro passo?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Chega de depender dos outros. Agende sua aula avaliativa e descubra como é libertador 
-            ter o controle do volante nas suas mãos!
+            Chega de depender dos outros. Agende sua <span className="text-primary font-semibold">aula avaliativa</span> e descubra como é libertador 
+            ter o <span className="text-primary font-semibold">controle do volante</span> nas suas mãos!
           </p>
           
           <div className="mb-12">
             <WhatsAppButton 
               variant="hero"
-              message="Olá Dalva! Quero agendar minha aula avaliativa. Preciso vencer o medo de dirigir e conquistar minha independência!"
+              message="Oi! Quero saber mais informações."
             >
-              Falar com a Instrutora Dalva no WhatsApp
+              Entre em Contato
             </WhatsAppButton>
           </div>
         </div>
