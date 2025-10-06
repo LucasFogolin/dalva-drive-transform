@@ -49,18 +49,26 @@ export const AboutSection = () => {
                 alt="Dalva Lúcia - Instrutora de Trânsito com mais de 16 anos de experiência"
                 className="w-full max-w-md rounded-3xl shadow-strong"
               />
-              <div className="absolute -bottom-6 -left-6 w-44 h-44 rounded-full border-[6px] border-primary/70 bg-background flex items-center justify-center rotate-[-15deg] shadow-strong">
-                <div className="relative w-36 h-36 rounded-full border-[3px] border-primary/70 flex items-center justify-center">
-                  <div className="absolute top-3 left-0 right-0 text-center">
-                    <p className="text-[10px] font-black text-primary uppercase tracking-[0.15em]">Especialista</p>
-                  </div>
-                  <Star className="text-primary fill-primary w-8 h-8" />
-                  <div className="absolute bottom-3 left-0 right-0 text-center">
-                    <p className="text-[10px] font-black text-primary uppercase tracking-[0.15em]">Medo de Dirigir</p>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-full h-0.5 bg-primary/70" style={{ transform: 'rotate(15deg)' }}></div>
-                    <div className="w-full h-0.5 bg-primary/70 absolute" style={{ transform: 'rotate(-15deg)' }}></div>
+              <div className="absolute -bottom-6 -left-6 w-44 h-44 flex items-center justify-center rotate-[-15deg]">
+                {/* Círculos externos */}
+                <div className="absolute w-44 h-44 rounded-full border-[3px] border-primary/60"></div>
+                <div className="absolute w-40 h-40 rounded-full border-2 border-dashed border-primary/70"></div>
+                <div className="absolute w-36 h-36 rounded-full border-[3px] border-primary/80"></div>
+                
+                {/* Estrelas decorativas */}
+                <Star className="absolute top-6 left-1/2 -translate-x-1/2 w-3 h-3 text-primary fill-primary" />
+                <Star className="absolute bottom-6 left-1/2 -translate-x-1/2 w-3 h-3 text-primary fill-primary" />
+                <Star className="absolute top-12 left-8 w-2 h-2 text-primary fill-primary" />
+                <Star className="absolute top-12 right-8 w-2 h-2 text-primary fill-primary" />
+                <Star className="absolute bottom-12 left-8 w-2 h-2 text-primary fill-primary" />
+                <Star className="absolute bottom-12 right-8 w-2 h-2 text-primary fill-primary" />
+                
+                {/* Faixa diagonal com texto */}
+                <div className="relative w-48 h-16 bg-background border-[3px] border-primary/80 shadow-strong flex items-center justify-center transform rotate-[8deg]">
+                  <div className="absolute inset-0 border-2 border-primary/60 m-1"></div>
+                  <div className="text-center px-2">
+                    <p className="text-[11px] font-black text-primary uppercase tracking-wider leading-tight">Especialista em</p>
+                    <p className="text-[11px] font-black text-primary uppercase tracking-wider leading-tight">Medo de Dirigir</p>
                   </div>
                 </div>
               </div>
