@@ -1,6 +1,7 @@
 import dalvaInstructor from "/lovable-uploads/fb863f46-7728-4005-8b3c-f4af29198f45.png";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -48,11 +49,19 @@ export const AboutSection = () => {
                 alt="Dalva Lúcia - Instrutora de Trânsito com mais de 16 anos de experiência"
                 className="w-full max-w-md rounded-3xl shadow-strong"
               />
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-full border-4 border-dashed border-primary/80 bg-primary/10 backdrop-blur-sm flex items-center justify-center rotate-[-12deg] shadow-strong">
-                <div className="text-center">
-                  <p className="text-xs font-bold text-primary uppercase tracking-wide">Especialista em</p>
-                  <p className="text-xs font-bold text-primary uppercase tracking-wide">superar o medo</p>
-                  <p className="text-xs font-bold text-primary uppercase tracking-wide">de dirigir</p>
+              <div className="absolute -bottom-6 -left-6 w-44 h-44 rounded-full border-[6px] border-primary/70 bg-background flex items-center justify-center rotate-[-15deg] shadow-strong">
+                <div className="relative w-36 h-36 rounded-full border-[3px] border-primary/70 flex items-center justify-center">
+                  <div className="absolute top-3 left-0 right-0 text-center">
+                    <p className="text-[10px] font-black text-primary uppercase tracking-[0.15em]">Especialista</p>
+                  </div>
+                  <Star className="text-primary fill-primary w-8 h-8" />
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <p className="text-[10px] font-black text-primary uppercase tracking-[0.15em]">Medo de Dirigir</p>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-full h-0.5 bg-primary/70" style={{ transform: 'rotate(15deg)' }}></div>
+                    <div className="w-full h-0.5 bg-primary/70 absolute" style={{ transform: 'rotate(-15deg)' }}></div>
+                  </div>
                 </div>
               </div>
             </div>
