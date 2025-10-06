@@ -48,9 +48,12 @@ export const AboutSection = () => {
                 alt="Dalva Lúcia - Instrutora de Trânsito com mais de 16 anos de experiência"
                 className="w-full max-w-md rounded-3xl shadow-strong"
               />
-              <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-2xl shadow-medium border border-lavender/20">
-                <p className="text-sm font-semibold text-primary">Especialista em superar</p>
-                <p className="text-sm font-semibold text-primary">o medo de dirigir</p>
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-full border-4 border-dashed border-primary/80 bg-primary/10 backdrop-blur-sm flex items-center justify-center rotate-[-12deg] shadow-strong">
+                <div className="text-center">
+                  <p className="text-xs font-bold text-primary uppercase tracking-wide">Especialista em</p>
+                  <p className="text-xs font-bold text-primary uppercase tracking-wide">superar o medo</p>
+                  <p className="text-xs font-bold text-primary uppercase tracking-wide">de dirigir</p>
+                </div>
               </div>
             </div>
           </div>
