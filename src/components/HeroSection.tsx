@@ -34,7 +34,7 @@ export const HeroSection = () => {
               <img
                 src={dalvaInstructor}
                 alt="Instrutora Dalva Lúcia - Instrutora de Trânsito Especializada"
-                className="w-full max-w-md rounded-3xl shadow-strong"
+                className="w-full max-w-md rounded-3xl shadow-strong object-cover mx-auto"
               />
               <div className="absolute -top-4 -right-4 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-2xl shadow-medium">
                 <p className="font-semibold text-sm">+16 anos de experiência</p>
