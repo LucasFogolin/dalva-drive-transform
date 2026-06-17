@@ -47,10 +47,10 @@ export const SocialFooter = () => {
           </div>
           
           <div className="border-t border-background/20 pt-6">
-            <p className="text-background/70 text-sm">
+            <p className="text-background text-sm">
               © 2024 Instrutora Dalva Lúcia - Todos os direitos reservados
             </p>
-            <p className="text-background/70 text-sm mt-2">
+            <p className="text-background text-sm mt-2">
               Aulas de direção em Santos, São Vicente e Praia Grande
             </p>
           </div>
