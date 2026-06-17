@@ -37,6 +37,8 @@ export const HeroSection = () => {
                 width={1536}
                 height={1024}
                 fetchPriority="high"
+                loading="eager"
+                decoding="async"
                 className="w-full max-w-md rounded-3xl shadow-strong object-cover mx-auto"
               />
               <div className="absolute -top-4 -right-4 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-2xl shadow-medium">
